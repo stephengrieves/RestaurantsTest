@@ -1,2 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container mt-5">
+  <h1>Restaurant Test</h1>
+  <p>A fake review website</p>
+  <p>Now is <%= Time.now %> </p>
+</div>
+
+
+<% dinner = [ 'stephen', 'mesh', 'orna', 'dave', 'morgane', 'eleanor'] %>
+
+<h2>Casa Tonight</h2>
+<ol>
+  <%= dinner.each do |p| %>
+  <li> <%= p.capitalize %> </li>
+  <% end %>
+</ol>
